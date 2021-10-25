@@ -1,0 +1,51 @@
+print("Enter value")
+value=input()
+idxa=0
+idxb=(len(value)-1)
+check=1
+loop=len(value)//2
+for i in range (loop):
+    if value[idxa]!=value[idxb]:
+        check=0
+    idxa=idxa+1
+    idxb=idxb-1
+print(check)
+
+
+print("Enter amount")
+a=[]
+b=[]
+c=[]
+amount=input()
+am=int(amount)
+for i in range (am):
+    val=input()
+    value=int(val)
+    if value%2==0:
+        a.append(value)
+    if value%3==0:
+        b.append(value)
+    if value%5==0:
+        c.append(value)
+    
+print(a,b,c)
+
+
+print("Enter value")
+value=input()
+eulav=''
+lengh=len(value)-1
+loop=len(value)
+if value[0]=="-":
+    eulav=eulav+'-'
+    for i in range(loop-1):
+        eulav=eulav+value[lengh-i]
+else:
+    for i in range(loop):
+        eulav=eulav+value[lengh-i]
+print(eulav)
+
+
+
+
+
